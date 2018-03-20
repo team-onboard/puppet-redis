@@ -1,0 +1,5 @@
+bind <%= @bind %>
+port <%= @port %>
+dir <%= @workdir %>
+
+<% if @slaveof -%>slaveof <%= @slaveof %><% end -%>

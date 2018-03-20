@@ -20,7 +20,7 @@ class redis::params {
   $bind                            = '127.0.0.1'
   $output_buffer_limit_slave       = '256mb 64mb 60'
   $output_buffer_limit_pubsub      = '32mb 8mb 60'
-  $conf_template                   = 'redis/redis.conf.erb'
+  $conf_template                   = 'redis/onboard/redis.conf.erb'
   $default_install                 = true
   $databases                       = 16
   $dbfilename                      = 'dump.rdb'
@@ -54,7 +54,7 @@ class redis::params {
   $sentinel_config_file_mode       = '0644'
   $sentinel_config_group           = 'root'
   $sentinel_config_owner           = 'redis'
-  $sentinel_conf_template          = 'redis/redis-sentinel.conf.erb'
+  $sentinel_conf_template          = 'redis/onboard/redis-sentinel.conf.erb'
   $sentinel_down_after             = 30000
   $sentinel_failover_timeout       = 180000
   $sentinel_master_name            = 'mymaster'
